@@ -15,4 +15,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 async def read_item(request: Request):
     # Pass dynamic data to the template
     return templates.TemplateResponse(
-        "index.html", {"request": request, "title": "Dynamic FastAPI
+        "index.html", {"request": request, "title": "Dynamic FastAPI Page"
+
+                       }
+        )
