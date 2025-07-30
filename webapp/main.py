@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 async def read_item(request: Request):
     # Pass dynamic data to the template
     return templates.TemplateResponse(
-        "home_page.html", {"request": request, "title": "Dynamic FastAPI Page"
+        "index.html", {"request": request, "title": "Dynamic FastAPI Page"
 
-                           }
+                       }
         )
