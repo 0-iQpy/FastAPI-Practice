@@ -15,10 +15,28 @@
     <meta property="twitter:title" content="E-Looc"/>
     <meta property="twitter:description" content="Welcome to the Brgy. Looc Website"/>
     <meta property="twitter:image" content="https://e-looc.vercel.app/static/img/preview.png"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/static/looc.svg">
+    <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="{{ url_for('static', path='style.css') }}"
+    />
     <title>{{ title }}</title>
 </head>
 <body>
+
 <h1>Welcome to FastAPI with Dynamic HTML!</h1>
 <p>{{ message }}</p>
 </body>
