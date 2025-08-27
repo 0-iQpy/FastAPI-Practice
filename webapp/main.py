@@ -19,3 +19,13 @@ async def read_item(request: Request):
 
                        }
         )
+
+
+@app.get("/admin", response_class=HTMLResponse)
+async def read_item(request: Request):
+    # Pass dynamic data to the template
+    return templates.TemplateResponse(
+        "admin_page/admin_dashboard.html", {"request": request, "title": "Dynamic FastAPI Page"
+
+                                            }
+        )
